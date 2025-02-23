@@ -20,6 +20,9 @@
     height: 80px;
     display: grid;
     align-items: center;
+    justify-items: center;
+    color: white;
+    font-weight: bold;
 }
 
 .logo{
