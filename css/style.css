@@ -11,8 +11,33 @@
 }
 
 .sidebar {
+    padding: 10px;
     background-color: dodgerblue;
     grid-area: 1 / 1 / -1 / span 1;
+}
+
+.name {
+    height: 80px;
+    display: grid;
+    align-items: center;
+}
+
+.logo{
+    grid-column: 1 / 2;
+}
+
+.title {
+    grid-column: 2 / 3;
+}
+
+.nav ul {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.settings ul {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr)
 }
 
 .main-content {
