@@ -214,7 +214,7 @@ p {
 .projects .content {
     grid-area: 2 / 1 / span 1 / span 1;
     display: grid;
-    grid-template: repeat(auto-fit, minmax(100px, 1fr)) / repeat(auto-fit, minmax(250px, 1fr));
+    grid-template: repeat(auto-fit, minmax(150px, 300px)) / repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
 }
 
@@ -226,6 +226,27 @@ p {
 
 .projects .card {
     border-left: 7px solid orange;
+    display: grid;
+    grid-template: 1fr 3fr 1fr 24px / 1fr
+}
+
+.projects .card .buttons {
+    justify-self: end;
+    grid-area: 4 / 1 / span 1 / span 1;
+    display: grid;
+    grid-template: 1fr / repeat(auto-fit, 24px);
+}
+
+.buttons #favorite {
+    grid-area: 1 / 5 / span 1 / span 1;
+}
+
+.buttons #watch {
+    grid-area: 1 / 6 / span 1 / span 1;
+}
+
+.buttons #share {
+    grid-area: 1 / 7 / span 1 / span 1;
 }
 
 .socials {
